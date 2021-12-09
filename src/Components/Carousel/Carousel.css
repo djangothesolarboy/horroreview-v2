@@ -1,0 +1,57 @@
+.carousel {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster-img {
+    width: 400px;
+    height: 500px;
+}
+
+.arw-btn {
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+}
+
+.arrow-prev {
+    position: absolute;
+    top: 47%;
+    left: 32px;
+    font-size: 3rem;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow-next {
+    position: absolute;
+    top: 47%;
+    right: 32px;
+    font-size: 3rem;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow-next:hover,
+.arrow-prev:hover {
+    color: black;
+    background-color: white;
+}
+
+.poster {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.poster.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
