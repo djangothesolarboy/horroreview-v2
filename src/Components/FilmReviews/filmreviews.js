@@ -30,3 +30,5 @@ export const filmreviews = [
     //     alt: ' review' 
     // }
 ];
+
+export default filmreviews;
