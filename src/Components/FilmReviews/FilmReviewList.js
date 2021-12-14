@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
 import filmreviews from './filmreviews';
 
 const FilmReviewList = () => {
@@ -6,7 +8,12 @@ const FilmReviewList = () => {
         <div className='film-list-container'>
             {filmreviews.map((film)=> {
                 return (
-                    <a className='review-link' href={film.src}>{film.name}</a>
+                    <>
+                        <Link className='review-link' to={film.src}>
+                            {film.name}
+                        </Link>
+                        {/* <Route path={film.src}/> */}
+                    </>
                 )
             })}
         </div>
