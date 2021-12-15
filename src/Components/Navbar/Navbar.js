@@ -3,23 +3,27 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 import Carousel from '../Carousel/Carousel';
 import posters from '../Carousel/posters.js';
-import FilmReviewList from '../FilmReviews/FilmReviewList';
+import FilmReviewNav from '../FilmReviews/FilmReviewNav';
 
 export const Navbar = () => {
     return (
         <nav className='navbar-container'>
-            {/* <a href='./'>Home | </a>
-            <a href='/film-reviews'>Films</a> */}
             <Router>
-                <Link exact to='/'>
+                <Link className='nav-link' exact to='/'>
                     Home
                 </Link>
-                <Link to='/filmreviews'>
+                <Link className='nav-link' exact to='/filmreviews'>
                     Films
+                </Link>
+                <Link className='nav-link' to='/tvreviews'>
+                    TV
+                </Link>
+                <Link className='nav-link' to='/bookreviews'>
+                    Books
                 </Link>
                 <Routes>
                     <Route exact path='/' element={<Carousel posters={posters}/>}/>
-                    <Route path='/filmreviews' element={<FilmReviewList />}/>
+                    <Route exact path='filmreviews/*' element={<FilmReviewNav/>}/>
                 </Routes>
             </Router>
         </nav>

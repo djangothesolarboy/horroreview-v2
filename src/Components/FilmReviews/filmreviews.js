@@ -1,17 +1,17 @@
 export const filmreviews = [
     { 
         name: 'Malignant', 
-        src: '/malignant', 
+        src: '/filmreviews/malignant', 
         alt: 'malignant review' 
     },
     { 
         name: 'Halloween Kills', 
-        src: '/halloween-kills', 
+        src: '/filmreviews/halloween-kills', 
         alt: ' review' 
     },
     { 
         name: 'Escape Room: Tournament Of Champions', 
-        src: '/escape-room_tournament-of-champions', 
+        src: '/filmreviews/escape-room_tournament-of-champions', 
         alt: ' review' 
     },
     // { 
