@@ -1,25 +1,26 @@
 import React from 'react';
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes, NavLink, Outlet } from 'react-router-dom';
 
-import filmreviews from './filmreviews';
+import { filmreviews } from './filmreviews';
 import Malignant from './Pages/malignant';
 
 const FilmReviewList = () => {
     return (
         <div className='film-nav-container'>
-            {/* {filmreviews.map((film)=> {
+            {filmreviews.map((film)=> {
                 return (
                     <div className='film'>
-                        <Link className='review-link' to={film.src} element={<Malignant/>}>
+                        <NavLink className='review-link' to={`/filmreviews/${film.number}`} key={film.number}>
                             {film.name}
-                        </Link>
+                        </NavLink>
+                        <Outlet/>
                     </div>
                 )
-            })} */}
-            <Link to='malignant'>Malignant</Link>
+            })}
+            {/* <Link to='malignant'>Malignant</Link>
             <Routes>
                 <Route path='malignant' element={<Malignant/>}>Malignant</Route>
-            </Routes>
+            </Routes> */}
         </div>
     )
 }

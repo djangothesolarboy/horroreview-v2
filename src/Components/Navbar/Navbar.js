@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, Outlet } from 'react-router-dom';
 
 import Carousel from '../Carousel/Carousel';
 import posters from '../Carousel/posters.js';
 import FilmReviewNav from '../FilmReviews/FilmReviewNav';
+import FilmReview from '../FilmReviews/FilmReview';
 
 export const Navbar = () => {
     return (
@@ -21,9 +22,13 @@ export const Navbar = () => {
                 <Link className='nav-link' to='/bookreviews'>
                     Books
                 </Link>
+                <Outlet/>
                 <Routes>
                     <Route exact path='/' element={<Carousel posters={posters}/>}/>
-                    <Route exact path='filmreviews/*' element={<FilmReviewNav/>}/>
+                    <Route exact path='filmreviews' element={<FilmReviewNav/>}>
+                        <Route index element={<p>Select a Film</p>}/>
+                        <Route path=':filmId' element={<FilmReview/>}/>
+                    </Route>
                 </Routes>
             </Router>
         </nav>

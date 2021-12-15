@@ -2,17 +2,23 @@ export const filmreviews = [
     { 
         name: 'Malignant', 
         src: '/filmreviews/malignant', 
-        alt: 'malignant review' 
+        number: 0,
+        alt: 'malignant review',
+        text: 'lorem'
     },
     { 
         name: 'Halloween Kills', 
         src: '/filmreviews/halloween-kills', 
-        alt: ' review' 
+        number: 1,
+        alt: ' review',
+        text: 'lorem'
     },
     { 
         name: 'Escape Room: Tournament Of Champions', 
         src: '/filmreviews/escape-room_tournament-of-champions', 
-        alt: ' review' 
+        number: 2,
+        alt: ' review',
+        text: 'lorem'
     },
     // { 
     //     name: '', 
@@ -31,4 +37,12 @@ export const filmreviews = [
     // }
 ];
 
-export default filmreviews;
+export function getFilmReviews() {
+    return filmreviews;
+}
+
+export function getFilmReview(number) {
+    return filmreviews.find(
+        filmReview => filmReview.number === number
+    );
+}
