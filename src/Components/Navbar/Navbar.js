@@ -26,9 +26,9 @@ export const Navbar = () => {
                 <Routes>
                     <Route exact path='/' element={<Carousel posters={posters}/>}/>
                     <Route exact path='filmreviews' element={<FilmReviewNav/>}>
-                        <Route index element={<p>Select a Film</p>}/>
-                        <Route path=':filmId' element={<FilmReview/>}/>
+                        <Route index/>
                     </Route>
+                    <Route exact path='/filmreviews/:filmId' element={<FilmReview/>}/>
                 </Routes>
             </Router>
         </nav>

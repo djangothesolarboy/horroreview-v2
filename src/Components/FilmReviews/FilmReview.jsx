@@ -5,6 +5,9 @@ export default function FilmReview() {
     let params = useParams();
     let filmReview = getFilmReview(parseInt(params.filmId, 10));
     return (
-        <h2>{filmReview.name}</h2>
+        <>
+            <h2>{filmReview.name}</h2>
+            <p>{filmReview.text}</p>
+        </>
     )
 }
