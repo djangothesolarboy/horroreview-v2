@@ -20,9 +20,5 @@ const FilmReviewList = () => {
         </div>
     )
 }
-{/* <Link to='malignant'>Malignant</Link>
-<Routes>
-    <Route path='malignant' element={<Malignant/>}>Malignant</Route>
-</Routes> */}
 
 export default FilmReviewList;
