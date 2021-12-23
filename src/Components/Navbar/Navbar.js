@@ -6,6 +6,12 @@ import posters from '../Carousel/posters.js';
 import FilmReviewNav from '../FilmReviews/FilmReviewNav';
 import FilmReview from '../FilmReviews/FilmReview';
 
+import BookReviewNav from '../BookReviews/BookReviewNav';
+import BookReview from '../BookReviews/BookReview';
+
+import TVReviewNav from '../TVReviews/TVReviewNav';
+import TVReview from '../TVReviews/TVReview';
+
 export const Navbar = () => {
     return (
         <nav className='navbar-container'>
@@ -29,6 +35,16 @@ export const Navbar = () => {
                         <Route index/>
                     </Route>
                     <Route exact path='/filmreviews/:filmId' element={<FilmReview/>}/>
+
+                    <Route exact path='bookreviews' element={<BookReviewNav/>}>
+                        <Route index/>
+                    </Route>
+                    <Route exact path='/bookreviews/:bookId' element={<BookReview/>}/>
+
+                    <Route exact path='tvreviews' element={<TVReviewNav/>}>
+                        <Route index/>
+                    </Route>
+                    <Route exact path='/tvreviews/:filmId' element={<TVReview/>}/>
                 </Routes>
             </Router>
         </nav>
