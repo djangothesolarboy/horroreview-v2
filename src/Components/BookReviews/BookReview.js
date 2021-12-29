@@ -1,5 +1,7 @@
 import { useParams } from 'react-router-dom';
+
 import { getBookReview } from './bookreviews';
+import './BookReview.css';
 
 export default function BookReview() {
     let params = useParams();

@@ -1,0 +1,25 @@
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.component-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 5px;
+}

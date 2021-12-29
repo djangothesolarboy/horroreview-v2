@@ -42,9 +42,16 @@ const posters = [
         class: 'poster',
         // link: './reviews/day-of-the-dead.html'
     }
+    , {
+        name: 'son of the slob',
+        src: process.env.PUBLIC_URL + '../Posters/son-of-the-slob_poster.jpg',
+        alt: 'son of the slob poster',
+        class: 'poster',
+        // link: './reviews/'
+    }
     // , {
     //     name: '',
-    //     src: process.env.PUBLIC_URL + './reviews/posters/',
+    //     src: process.env.PUBLIC_URL + '../Posters/',
     //     alt: 'poster',
     //     class: 'poster',
     //     link: './reviews/'

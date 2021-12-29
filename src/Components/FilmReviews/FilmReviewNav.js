@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 
 import { filmreviews } from './filmreviews';
+import './FilmReviewNav.css';
 
 const FilmReviewList = () => {
     return (
