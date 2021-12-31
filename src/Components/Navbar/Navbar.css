@@ -12,6 +12,7 @@
 }
 
 .navbar-links {
+    background-color: #202030;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -21,5 +22,15 @@
 
 .nav-link {
     text-decoration: none;
+    color: #635c51;
     padding: 5px;
+}
+
+.nav-link:hover {
+    color: #7d7461;
+}
+
+body {
+    background-color: #39304a;
+    color: #b0a990;
 }

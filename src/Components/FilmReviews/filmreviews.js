@@ -1,7 +1,8 @@
 export const filmreviews = [
     { 
         name: 'Malignant', 
-        src: '/filmreviews/malignant', 
+        src: '/filmreviews/0', 
+        poster: process.env.PUBLIC_URL + './Posters/malignant-poster.jpg',
         number: 0,
         alt: 'malignant review',
         text: `I went into this knowing literally 0. All I knew was that it is a James Wan film and that there was some hype around it. I didn't see a trailer at all, nor did I even know a basic film description going into it. \n \n
@@ -16,7 +17,8 @@ export const filmreviews = [
     },
     { 
         name: 'Halloween Kills', 
-        src: '/filmreviews/halloween-kills', 
+        src: '/filmreviews/1', 
+        poster: process.env.PUBLIC_URL + './Posters/halloween-kills_poster.jpg',
         number: 1,
         alt: 'halloween kills review',
         text: `Halloween Kills is most likely going to be another film that divides the horror community, some will love it with all of its quirks, while others will hate it's addition onto the Halloweens franchise. For me personally, I can see either side of the arguments. There were definitely some points in the film I didn't like or really enjoy, but there were also some things that I did really enjoy and thought were super cool to include. \n \n
@@ -31,7 +33,8 @@ export const filmreviews = [
     },
     { 
         name: 'Escape Room: Tournament Of Champions', 
-        src: '/filmreviews/escape-room_tournament-of-champions', 
+        src: '/filmreviews/2', 
+        poster: process.env.PUBLIC_URL + './Posters/escape_room_2-poster.jpg',
         number: 2,
         alt: 'escape room 2 review',
         text: ` The sequel to a film I thought I would enjoy, but in the end I was fairly disappointed in how the entire film plays out. The film isn't terrible, but it felt like it fell short on many things it could have exceeded in. \n \n
@@ -40,21 +43,38 @@ export const filmreviews = [
 
         Or even, they could have brought this backstory they so graciously gave us in the second film, in the first instead. Because honestly, I did think the backstory was interesting. But I also know the backstory was merely a way for them to milk the cow some more for a third film. \n`
     },
+    { 
+        name: "Don't Breathe 2", 
+        src: '/filmreviews/3', 
+        poster: process.env.PUBLIC_URL + './Posters/dont-breathe-2_poster.jpg',
+        number: 3,
+        alt: 'dont breathe 2 review',
+        text: `I have to be honest and say that I don't remember too much of the first film. The only thing I remember was the old man was blind and did some bad things because something happened to his daughter. So that may be why this one really confused me. I didn't really understand the point of it, or how it was even remotely relevant to the first film other than the blind guy. \n \n
+        
+        Even if I were to take away that confusion, I still just didn't get the point. It felt like they were just trying to make some more money by calling it a sequel and including the same character. The story just fell super flat to me, and I didn't really care what happened to the child. I was really just indifferent the entire watch.`
+    },
+    { 
+        name: 'Old', 
+        src: '/filmreviews/4',
+        poster: process.env.PUBLIC_URL + './Posters/old_poster.jpg',
+        number: 4, 
+        alt: 'old review',
+        text: `Now this was my second time watching this film. And my biggest concern from then and now, is that I feel the name gives a lot away. You go into the film sort of figuring out that this is what is going to happen. To me that really sucks. It is like when you watch a trailer for a film you are excited to see, only to have all the good bits in it. It takes away from the experience of the movie. \n \n
+        
+        I honestly feel like nowadays, these big film companies are trying so hard to get people to see their films, that they put whatever the good parts are into the trailer. Just in the hopes that it would convince the audience to see it. Along with the terrible naming that so many movies have had lately. \n \n
+        
+        All of that aside, I do feel like this movie wasn't that bad. I think the entire premise is immensely interesting. I feel like the whole thing of this company putting all this shit together to try to find cures for diseases at the expense of a few people, is something that would most likely happen. It is sad, but I wouldn't be surprised in the least. \n \n 
+        
+        Overall, I definitely feel like it is a solid film, maybe not the best of the year, but definitely something interesting. It takes horror to a different space where we normally wouldn't see. It is a sort of body horror, without it being so explicit, while touching on many different real life horrors.`
+    },
     // { 
     //     name: '', 
-    //     src: '', 
-    //     alt: ' review' 
+    //     src: '',
+    //     poster: process.env.PUBLIC_URL + './Posters/',
+    //     number: 4, 
+    //     alt: ' review',
+    //     text: ``
     // },
-    // { 
-    //     name: '', 
-    //     src: '', 
-    //     alt: ' review' 
-    // },
-    // { 
-    //     name: '', 
-    //     src: '', 
-    //     alt: ' review' 
-    // }
 ];
 
 export function getFilmReviews() {

@@ -6,6 +6,24 @@
 }
 
 .film {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #202030;
+    border-radius: 5px;
+    transition: 0.3s;
+    padding: 40px;
     padding: 10px;
-    margin: 5px;
+    margin: 40px;
+}
+
+.film:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.spoiler-warning {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.review-poster {
+    width: 250px;
 }

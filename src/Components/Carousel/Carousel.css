@@ -12,17 +12,19 @@
 }
 
 .arw-btn {
-    background-color: black;
-    border-radius: 50%;
     border: none;
+    filter: invert(1);
+    background-color: transparent;
+}
+
+.arw-btn img {
+    height: 24px;
 }
 
 .arrow-prev {
     position: absolute;
     top: 47%;
-    left: 32px;
-    font-size: 3rem;
-    color: white;
+    left: 0px;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -31,9 +33,7 @@
 .arrow-next {
     position: absolute;
     top: 47%;
-    right: 32px;
-    font-size: 3rem;
-    color: white;
+    right: 0px;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -41,8 +41,7 @@
 
 .arrow-next:hover,
 .arrow-prev:hover {
-    color: black;
-    background-color: white;
+    filter: invert(0);
 }
 
 .poster {
