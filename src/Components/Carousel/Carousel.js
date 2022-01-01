@@ -32,8 +32,8 @@ const Carousel = ({ posters }) => {
 
     return (
         <section className='carousel' onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
-            <button className='arw-btn arrow-prev' onClick={prevPoster}><img src='https://raw.githubusercontent.com/djangothesolarboy/kaboom-experiment/primary/assets/imgs/controls/left_arrow.ico'></img></button>
-            <button className='arw-btn arrow-next' onClick={nextPoster}><img src='https://raw.githubusercontent.com/djangothesolarboy/kaboom-experiment/primary/assets/imgs/controls/right_arrow.ico'></img></button>
+            <button className='arw-btn arrow-prev' onClick={prevPoster}><img alt='arrow' src='https://raw.githubusercontent.com/djangothesolarboy/kaboom-experiment/primary/assets/imgs/controls/left_arrow.ico'></img></button>
+            <button className='arw-btn arrow-next' onClick={nextPoster}><img alt='arrow' src='https://raw.githubusercontent.com/djangothesolarboy/kaboom-experiment/primary/assets/imgs/controls/right_arrow.ico'></img></button>
             {posters.map((poster, index) => {
                 return (
                     <div className={index === current ? 'poster active' : 'poster'} key={index}>

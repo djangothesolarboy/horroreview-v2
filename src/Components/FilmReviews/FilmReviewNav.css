@@ -5,17 +5,27 @@
     flex-direction: column;
 }
 
-.film {
+.film-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.film, 
+.spoiler-container {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: #202030;
     border-radius: 5px;
     transition: 0.3s;
-    padding: 40px;
     padding: 10px;
     margin: 40px;
 }
 
-.film:hover {
+.film:hover,
+.spoiler-container:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
