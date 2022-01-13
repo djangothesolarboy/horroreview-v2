@@ -2,6 +2,16 @@ Horroreview-v2
 ---
 A revised version of my Horror review website. After a while of updating the original site, I found that the code was becoming too complicated so I decided to give it a rework by using React to help make the code easier to read. By using React components I can make the code more readable and more flexible.
 
+Todo
+---  
+- [ ] Connect review data in Carousel component  
+- [ ] Copy page structure from Film Nav to Book Nav
+- [ ] Copy page structure from Film Nav to TV Nav
+- [ ] Copy page structure from Film Page to Book Page
+- [ ] Copy page structure from Film Page to TV Page
+- [ ] Add About Page → With link to Repo
+
+
 Color Palette
 ---
 ![https://coolors.co/202030-39304a-635c51-7d7461-b0a990](./public/palette.png)  
