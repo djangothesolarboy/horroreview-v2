@@ -14,6 +14,10 @@
     flex-wrap: wrap;
 }
 
+.review-link {
+    padding-top: 0;
+}
+
 .film, 
 .spoiler-container {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -22,6 +26,11 @@
     transition: 0.3s;
     padding: 10px;
     margin: 40px;
+}
+
+.spoiler-warning {
+    padding: 10px;
+    padding-bottom: 0;
 }
 
 .film:hover,

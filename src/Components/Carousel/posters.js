@@ -1,3 +1,6 @@
+import { useParams } from 'react-router-dom';
+import { getFilmReview } from '../FilmReviews/filmreviews';
+
 const posters = [
     {
         name: 'malignant',
