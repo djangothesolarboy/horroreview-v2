@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link, Outlet } from 'react-rout
 
 import Carousel from '../Carousel/Carousel';
 import posters from '../Carousel/posters.js';
+import filmreviews from '../FilmReviews/filmreviews';
 import FilmReviewNav from '../FilmReviews/FilmReviewNav';
 import FilmReview from '../FilmReviews/FilmReview';
 import BookReviewNav from '../BookReviews/BookReviewNav';

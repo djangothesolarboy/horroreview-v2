@@ -86,3 +86,5 @@ export function getFilmReview(number) {
         filmReview => filmReview.number === number
     );
 }
+
+export default filmreviews;

@@ -4,7 +4,7 @@ A revised version of my Horror review website. After a while of updating the ori
 
 Todo
 ---  
-- [ ] Connect review data in Carousel component  
+- [x] Connect review data in Carousel component (Make Posters clickable)  
 - [ ] Copy page structure from Film Nav to Book Nav
 - [ ] Copy page structure from Film Nav to TV Nav
 - [ ] Copy page structure from Film Page to Book Page

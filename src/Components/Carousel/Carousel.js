@@ -31,17 +31,19 @@ const Carousel = ({ posters }) => {
     if (!Array.isArray(posters) || posters.length <= 0) return null;
 
     return (
-        <section className='carousel' onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
-            <button className='arw-btn arrow-prev' onClick={prevPoster}><img alt='arrow' src='https://raw.githubusercontent.com/djangothesolarboy/kaboom-experiment/primary/assets/imgs/controls/left_arrow.ico'></img></button>
-            <button className='arw-btn arrow-next' onClick={nextPoster}><img alt='arrow' src='https://raw.githubusercontent.com/djangothesolarboy/kaboom-experiment/primary/assets/imgs/controls/right_arrow.ico'></img></button>
-            {posters.map((poster, index) => {
-                return (
-                    <div className={index === current ? 'poster active' : 'poster'} key={index}>
-                        {index === current && (<img className='poster-img' src={poster.src} alt={poster.alt}/>)}
-                    </div>
-                )
-            })}
-        </section>
+        <>
+            <section className='carousel' onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
+                <button className='arw-btn arrow-prev' onClick={prevPoster}><img alt='arrow' src='https://raw.githubusercontent.com/djangothesolarboy/kaboom-experiment/primary/assets/imgs/controls/left_arrow.ico'></img></button>
+                <button className='arw-btn arrow-next' onClick={nextPoster}><img alt='arrow' src='https://raw.githubusercontent.com/djangothesolarboy/kaboom-experiment/primary/assets/imgs/controls/right_arrow.ico'></img></button>
+                {posters.map((poster, index) => {
+                    return (
+                        <div className={index === current ? 'poster active' : 'poster'} key={index}>
+                            {index === current && (<a href={poster.href}><img className='poster-img' src={poster.src} alt={poster.alt}/></a>)}
+                        </div>
+                    )
+                })}
+            </section>
+        </>
     )
 }
 
